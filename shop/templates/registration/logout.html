@@ -1,0 +1,10 @@
+<!-- In your base.html or wherever you want the logout button -->
+<form
+  id="logout-form"
+  action="{% url 'logout' %}"
+  method="post"
+  style="display: inline"
+>
+  {% csrf_token %}
+  <button type="submit" class="btn btn-link">Logout</button>
+</form>
